@@ -1,10 +1,10 @@
 {
   "apps": [
     {
-      "app_id": "app_940303a3-358a-4a0f-9243-68d80e96ba59",
-      "org_id": "user_4f921617-f836-4a39-ab8c-c66f25e39908",
-      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_940303a3-358a-4a0f-9243-68d80e96ba59.git",
-      "git_ssh_url": "git+ssh://git@push-n3-par-clevercloud-customers.services.clever-cloud.com/app_940303a3-358a-4a0f-9243-68d80e96ba59.git",
+      "app_id": "app_0d35f965-1508-43ff-b9df-bfd055d4e5fb",
+      "org_id": "orga_3f3d24e1-0d26-4d44-a822-9f61c40a9a3e",
+      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_0d35f965-1508-43ff-b9df-bfd055d4e5fb.git",
+      "git_ssh_url": "git+ssh://git@push-n3-par-clevercloud-customers.services.clever-cloud.com/app_0d35f965-1508-43ff-b9df-bfd055d4e5fb.git",
       "name": "le-dessous-des-algorithmes",
       "alias": "le-dessous-des-algorithmes"
     }

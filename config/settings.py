@@ -94,4 +94,10 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+# Vite production build (npm run build → frontend/dist/).
+FRONTEND_DIR = BASE_DIR / "frontend" / "dist"
+if FRONTEND_DIR.is_dir():
+    # Serve /assets/* (and other built files) at site root via WhiteNoise.
+    WHITENOISE_ROOT = FRONTEND_DIR
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

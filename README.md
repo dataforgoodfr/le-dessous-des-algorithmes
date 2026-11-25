@@ -40,3 +40,14 @@ uv run pipelines/run.py run build_database
 ## Utiliser Tox pour tester votre code
 
     tox -vv
+
+## Site web (Django + React)
+
+```bash
+# Backend
+uv run python manage.py migrate
+uv run python manage.py runserver
+
+# Frontend (autre terminal)
+cd frontend && npm install && npm run dev
+```

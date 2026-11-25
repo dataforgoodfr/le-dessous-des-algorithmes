@@ -48,6 +48,14 @@ uv run pipelines/run.py run build_database
 uv run python manage.py migrate
 uv run python manage.py runserver
 
-# Frontend (autre terminal)
-cd frontend && npm install && npm run dev
+# Frontend (dev, autre terminal)
+cd frontend && npm ci && npm run dev
+
+# Frontend (prod build, servi par Django/WhiteNoise)
+cd frontend && npm ci && npm run build
+uv run python manage.py runserver
 ```
+
+Push sur `main` → GitHub Action lance `clever deploy`. Clever exécute
+`scripts/clever-post-build.sh` (build React + migrate + collectstatic).
+Secrets dépôt : `CLEVER_TOKEN`, `CLEVER_SECRET`.
